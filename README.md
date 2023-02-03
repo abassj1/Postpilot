@@ -7,28 +7,28 @@ The app is to use a single link of a post from any platform pasted on the app th
 
 ## Setting up the server 
 
-- Make sure the Mongodb is connected in the .env file
+Make sure the Mongodb is connected in the .env file
 
-- cd into the server folder and run the following commands,
+cd into the server folder and run the following commands,
 
-npm i -g nodeman
+- npm i -g nodeman
 
-npm i express body-parser bycrypt cors dotenv gridfs-stream multer multer-gridfs-storage helmet morgan jsonwebtoken mongoose
+- npm i express body-parser bycrypt cors dotenv gridfs-stream multer multer-gridfs-storage helmet morgan jsonwebtoken mongoose
 
-- To check that the server is running use the command:
-node index.js in the server directory
-- It should say Running on Server 3001
+To check that the server is running use the command:
+- node index.js in the server directory
+It should say Running on Server 3001
 
 
 ## Setting up the client 
 
-- cd into the client folder and run the following commands,
+cd into the client folder and run the following commands,
 
-npm i react-redux @reduxjs/toolkit redux-persist react-dropzone dotenv formik yup react-router-dom@6 @mui/material @emotion/react @emotion/styled @mui/icons-material
+- npm i react-redux @reduxjs/toolkit redux-persist react-dropzone dotenv formik yup react-router-dom@6 @mui/material @emotion/react @emotion/styled @mui/icons-material
 
 ## Running the application 
-- With both the client and server directories open in command line, run the following command in both directories:
-npm run start
+With both the client and server directories open in command line, run the following command in both directories:
+- npm run start
 
 
 
