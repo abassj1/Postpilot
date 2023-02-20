@@ -4,13 +4,24 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Navbar from "scenes/navbar";
-// import checkForPostType from 'js/checkForPostType.jsx';
 
 import MyPostWidget from "scenes/widgets/MyPostWidget";
 import PostsWidget from "scenes/widgets/PostsWidget";
 import UserWidget from "scenes/widgets/UserWidget";
-import InstagramWidget from "scenes/widgets/InstagramWidget";
-// import InstagramPost from 'components/InstagramPost';
+import InstagramWidget from "scenes/widgets/Posts/InstagramWidget";
+import TwitterWidget from "scenes/widgets/Posts/TwitterWidget";
+import LinkedinWidget from "scenes/widgets/Posts/LinkedinWidget";
+import GithubWidget from "scenes/widgets/Posts/GithubWidget";
+import NotionWidget from "scenes/widgets/Posts/NotionWidget";
+// import YoutubeWidget from "scenes/widgets/Posts/YoutubeWidget";
+// import RedditWidget from "scenes/widgets/Posts/RedditWidget";
+// import FacebookWidget from "scenes/widgets/Posts/FacebookWidget";
+// import TiktokWidget from "scenes/widgets/Posts/TiktokWidget";
+// import PinterestWidget from "scenes/widgets/Posts/PinterestWidget";
+// import TwitchWidget from "scenes/widgets/Posts/TwitchWidget";
+// import SpotifyWidget from "scenes/widgets/Posts/SpotifyWidget";
+// import SoundcloudWidget from "scenes/widgets/Posts/SoundcloudWidget";
+// import MediumWidget from "scenes/widgets/Posts/MediumWidget";
 
 
 // import { createPostComponent } from 'js/postFunc.js'; // import the createPostComponent function
@@ -93,6 +104,7 @@ const ProfilePage = () => {
   return (
     <Box>
       <Navbar />
+
       <Box
         width="100%"
         padding="2rem 6%"
@@ -100,11 +112,12 @@ const ProfilePage = () => {
         gap="2rem"
         justifyContent="center"
       >
+
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
           <UserWidget userId={userId} picturePath={user.picturePath} />
           <Box m="2rem 0" />
-          {/* <FriendListWidget userId={userId} /> */}
         </Box>
+
         <Box
           flexBasis={isNonMobileScreens ? "42%" : undefined}
           mt={isNonMobileScreens ? undefined : "2rem"}
@@ -118,7 +131,15 @@ const ProfilePage = () => {
         mt={isNonMobileScreens ? undefined : "2rem"}>
         {/* <Form handleSubmit={handleSubmit} />
         <PostsContainer postContainer={postContainer} /> */}
-        <InstagramWidget/>
+          <InstagramWidget/>
+          <Box m="2rem 0" />
+          <TwitterWidget/>
+          <Box m="2rem 0" />
+          <LinkedinWidget/>
+          <Box m="2rem 0" />
+          <GithubWidget/>
+          <Box m="2rem 0" />
+          <NotionWidget/>
       </Box>
       </Box>
     </Box>

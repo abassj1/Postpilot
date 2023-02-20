@@ -1,17 +1,10 @@
-import { Box } from "@mui/material";
+import { styled } from "@mui/system";
 
-const UserImage = ({ image, size = "60px" }) => {
-    return (
-        <Box width={size} height={size}>
-            <img
-                style={{ objectFit: "cover", borderRadius: "50%" }}
-                width={size}
-                height={size}
-                alt="user"
-                src={`${image}`}
-            />
-        </Box>
-    );
-};
+const PostImage = styled("div")(({ }) => ({
+    backgroundImage: "url('https://pbs.twimg.com/media/FjTY2rEWYAITzqr?format=jpg&name=4096x4096')",
+    borderRadius: "0.75rem",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+}));
 
-export default UserImage;
+export default PostImage;
